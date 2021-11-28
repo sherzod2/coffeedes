@@ -1,0 +1,20 @@
+.main-button{
+    padding: 16px 32px;
+    border-radius: 6px;
+    background: #0E8784;
+    border: none;
+}
+
+.main-button:hover{
+    background: #66D2CF;
+    cursor: pointer;
+}
+
+.main-button span{
+    font-family: "Fraunces", sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FEFCF7;
+}

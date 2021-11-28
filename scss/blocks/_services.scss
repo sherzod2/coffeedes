@@ -1,0 +1,107 @@
+.site-services{
+    position: relative;
+    padding-bottom: 350px;
+}
+
+.services__head{
+    padding: 100px 0 317px;
+    background: #2C343E;
+    border-radius: 10px;
+}
+
+.services__head-title{
+    font-family: "Fraunces", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #FEFCF7;
+    margin: 0 0 32px;
+    padding: 0;
+}
+
+.services__head-p{
+    line-height: 26px;
+    text-align: center;
+    color: #FEFCF7;
+    opacity: 0.8;
+}
+
+.services__list{
+    position: absolute;
+    top: 360px;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin: -15px;
+    margin-left: -555px;
+}
+
+.services__item{
+    background: #0E8784;
+    border-radius: 8px;
+    padding: 72px 48px 48px;
+    margin: 15px;
+}
+
+.services__item:nth-child(3){
+    padding-top: 83px;
+}
+
+.services__item:nth-child(1)::before{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    background-image: url("../images/choose-one.png");
+    background-size: 72px 72px;
+    width: 72px;
+    height: 72px;
+    margin-bottom: 56px;
+}
+.services__item:nth-child(2)::before{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    background-image: url("../images/choose-two.png");
+    background-size: 72px 72px;
+    width: 72px;
+    height: 72px;
+    margin-bottom: 56px;
+}
+.services__item:nth-child(3)::before{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    background-image: url("../images/choose-three.png");
+    background-size: 72px 50px;
+    width: 72px;
+    height: 50px;
+    margin-bottom: 67px;
+}
+
+.services__item-link{
+    text-decoration: none;
+}
+
+.services__item-h3{
+    font-family: "Fraunces", sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #FEFCF7;
+    margin: 0 0 24px;
+    padding: 0;
+}
+
+.services__item-desc{
+    line-height: 26px;
+    text-align: center;
+    color: #FEFCF7;
+    margin: 0;
+    padding: 0;
+}

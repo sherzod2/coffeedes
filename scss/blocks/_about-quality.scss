@@ -1,0 +1,38 @@
+.site-quality{
+    position: relative;
+    padding: 0 0 100px;
+}
+
+.quality{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2C343E;
+    padding: 86px 0 176px 85px;
+    border-radius: 10px;
+}
+
+.quality-right{
+    position: absolute;
+    top: -88px;
+    left: 50%;
+    margin-left: 110px;
+    border-radius: 10px;
+}
+
+.quality-title{
+    font-family: "Fraunces", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FEFCF7;
+    margin: 0 0 32px;
+    padding: 0;
+}
+
+.quality-desc{
+    line-height: 26px;
+    color: #FEFCF7;
+    margin: 0;
+    padding: 0;
+}

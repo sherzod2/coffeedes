@@ -1,0 +1,184 @@
+
+.coffee{
+    padding: 68px 0;
+}
+
+.coffee__container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 1150px;
+}
+
+.coffee__list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.coffee__item + .coffee__item{
+    border-top: 1px solid rgba(131, 136, 143, 0.25);
+    width: 255px;
+}
+
+.cofee__item-btn{
+    font-family: "Fraunces 9pt", sans-serif;
+    margin: 0;
+    padding: 24px 0;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333D4B;
+    opacity: 0.4;
+    border: none;
+    background-color: transparent;
+    transition: 0.3s;
+
+    &-span{
+        margin-right: 25px;
+    }
+
+    &:hover{
+        color: #333D4B;
+        opacity: 0.6;
+        cursor: pointer;
+    }
+
+    &:active{
+        color: #333D4B;
+        opacity: 1;
+    }
+}
+
+.cofee__item-btn-1{
+    padding: 0 0 24px;
+}
+
+// .form-coffee{
+//     &__label{
+//         display: flex;
+//         align-items: center;
+//         border-radius: 8px;
+
+//         &:hover{
+//             background: #FDD6BA;
+//         }
+//     }
+// }
+
+.form-coffee{
+
+    margin-bottom: 88px;
+
+    &__list{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__item{
+        padding-bottom: 88px;
+    }
+
+    &__label{
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+
+        &:hover{
+            background: #FDD6BA;
+        }
+    }
+
+    &__title{
+        font-family: "Fraunces", sans-serif;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
+        color: #83888F;
+        margin: 0;
+        margin-bottom: 56px;
+    }
+
+    &__body{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 730px;
+    }
+
+    &__card{
+        padding: 32px 28px 0;
+        min-height: 250px;
+        max-width: 228px;
+        background-color: #F4F1EB;
+        border-radius: 8px;
+        transition: 0.3s;
+
+        &:hover{
+            background-color: #FDD6BA;
+            cursor: pointer;
+        }
+    }
+
+    &__check:checked + &__card{
+        background-color: #0E8784;
+    }
+
+    &__check:checked + &__card &__label-title{
+        color: #fff;
+    }
+
+    &__check:checked + &__card &__label-desc{
+        color: #FEFCF7;
+    }
+
+    &__label-title{
+        font-family: "Fraunces", sans-serif;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: #333D4B;
+    }
+
+    &__label-desc{
+        line-height: 26px;
+        color: #333D4B;
+    }
+}
+
+.coffee__summary{
+    max-width: 730px;
+    width: 100%;
+    min-height: 208px;
+    padding: 27px 64px 0;
+    background-color: #2C343E;
+    border-radius: 8px;
+    margin-bottom: 40px;
+
+    &-title{
+        font-weight: normal;
+        line-height: 26px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        opacity: 0.5;
+        margin: 0 0 8px;
+    }
+
+    &-desc{
+        font-family: "Fraunces", sans-serif;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 40px;
+        color: #FFFFFF;
+        margin: 0;
+
+        &-span{
+            color: #0E8784;
+        }
+    }
+}
+
+.main-button--coffee{
+    margin-left: 513px;
+}

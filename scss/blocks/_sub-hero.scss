@@ -1,0 +1,26 @@
+
+.site-sub-hero{
+    background-image: url("../../images/active-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: 1280px 450px;
+    background-position: center;
+    padding-bottom: 68px;
+}
+
+.sub-hero{
+    padding: 134px 0 134px 85px;
+    &__title{
+        margin: 0 0 32px;
+        font-family: "Fraunces 9pt", sans-serif;
+        font-weight: 900;
+        font-size: 72px;
+        line-height: 72px;
+        color: #FEFCF7;
+    }
+
+    &__desc{
+        line-height: 26px;
+        color: #FEFCF7;
+        margin: 0;
+    }
+}
