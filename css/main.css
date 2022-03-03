@@ -433,6 +433,16 @@ img {
   padding: 43px 0;
 }
 
+.site-header__hamburger {
+  display: none;
+  background-color: transparent;
+  border: none;
+  background-image: url("../images/humburger.svg");
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 15px;
+}
+
 .site-header__hero-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -485,14 +495,50 @@ img {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 600px) {
+  .site-header {
+    position: relative;
+  }
+  .site-header__hamburger {
+    display: inline-block;
+  }
+  .site-nav {
+    display: none;
+  }
+  .header--open .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.952);
+    border: 1px solid #333D4B;
+    -webkit-transition: 5s;
+    transition: 5s;
+  }
+  .header--open .site-nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header--open .site-nav__item {
+    margin: 0;
+  }
+}
+
 .hero {
   padding: 117px 0 116px 85px;
   background-image: url("../images/hero-img.jpg");
   border-radius: 10px;
-  background-size: 1280px 600px;
+  background-size: cover;
   background-repeat: no-repeat;
-  width: 1280px;
-  height: 600px;
 }
 
 .hero__title {
@@ -511,6 +557,22 @@ img {
   line-height: 26px;
   color: #FEFCF7;
   opacity: 0.8;
+}
+
+@media only screen and (max-width: 1015px) {
+  .hero {
+    padding: 104px 0 104px 58px;
+    background-image: url("../images/tablet-hero.jpg");
+  }
+  .hero__title {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .hero__p {
+    font-size: 15px;
+    line-height: 25px;
+    margin: 1.5rem 0 2.5rem;
+  }
 }
 
 .main-button {
@@ -541,7 +603,7 @@ img {
 .collection {
   background-image: url("../images/our-collection.png");
   background-repeat: no-repeat;
-  background-size: 1111px 196px;
+  background-size: 100%;
   background-position: center bottom 460px;
   padding: 260px 0 200px;
 }
@@ -559,46 +621,6 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.collection__item:nth-child(1)::before {
-  content: '';
-  display: block;
-  margin: 0 auto;
-  width: 256px;
-  height: 193px;
-  background-image: url("../images/collection-one.png");
-  background-repeat: no-repeat;
-}
-
-.collection__item:nth-child(2)::before {
-  content: '';
-  display: block;
-  margin: 0 auto;
-  width: 256px;
-  height: 193px;
-  background-image: url("../images/collection-two.png");
-  background-repeat: no-repeat;
-}
-
-.collection__item:nth-child(3)::before {
-  content: '';
-  display: block;
-  margin: 0 auto;
-  width: 256px;
-  height: 193px;
-  background-image: url("../images/collection-three.png");
-  background-repeat: no-repeat;
-}
-
-.collection__item:nth-child(4)::before {
-  content: '';
-  display: block;
-  margin: 0 auto;
-  width: 256px;
-  height: 193px;
-  background-image: url("../images/collection-four.png");
-  background-repeat: no-repeat;
 }
 
 .collection__item-h3 {
@@ -620,9 +642,50 @@ img {
   padding: 0;
 }
 
+@media only screen and (max-width: 1060px) {
+  .collection__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .collection {
+    padding: 12.7rem 0 7rem;
+    background-position: center bottom 60rem;
+  }
+  .collection__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .collection__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 2rem;
+  }
+  .collection__item-img {
+    margin-right: 36px;
+  }
+  .collection__item-h3 {
+    text-align: left;
+  }
+  .collection__item-desc {
+    text-align: left;
+  }
+}
+
 .site-services {
-  position: relative;
   padding-bottom: 350px;
+}
+
+.services {
+  position: relative;
 }
 
 .services__head {
@@ -662,7 +725,6 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0;
   padding: 0;
   list-style: none;
   margin: -15px;

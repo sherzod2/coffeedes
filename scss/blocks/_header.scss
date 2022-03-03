@@ -1,48 +1,97 @@
-.site-header{
+.site-header {
     padding: 43px 0;
+
+    &__hamburger {
+        display: none;
+        background-color: transparent;
+        border: none;
+        background-image: url("../images/humburger.svg");
+        background-repeat: no-repeat;
+        width: 16px;
+        height: 15px;
+      }
 }
 
-.site-header__hero-nav{
+.site-header__hero-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
+}
 
-  .site-header__hero-nav-logo:hover{
-      opacity: 0.8;
-  }
+.site-header__hero-nav-logo:hover {
+    opacity: 0.8;
+}
 
-  .site-header__hero-nav-logo:active{
-      opacity: 0.6;
-  }
+.site-header__hero-nav-logo:active {
+    opacity: 0.6;
+}
 
-  .site-nav__list{
-      display: flex;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-  }
+.site-nav__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
-  .site-nav__item{
-      padding: 7px 0px 7px;
-  }
+.site-nav__item {
+    padding: 7px 0px 7px;
+}
 
-  .site-nav__item + .site-nav__item{
-      margin-left: 32px;
-  }
+.site-nav__item+.site-nav__item {
+    margin-left: 32px;
+}
 
 
-  .site-nav__item-a{
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 12px;
-      line-height: 15px;
-      letter-spacing: 0.923077px;
-      text-transform: uppercase;
-      color: #83888F;
-    }
+.site-nav__item-a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888F;
+}
 
-.site-nav__item-a:hover{
+.site-nav__item-a:hover {
     color: #333D4B;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .site-header {
+        position: relative;
+
+        &__hamburger {
+            display: inline-block;
+        }
+    }
+
+    .site-nav {
+        display: none;
+    }
+
+    // .header--open .site-header__hamburger {
+    //     background-image: url("../images/times-solid.svg");
+    // }
+
+    .header--open .site-nav {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 70%;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.952);
+        border: 1px solid #333D4B;
+        transition: 5s;
+    }
+
+    .header--open .site-nav__list {
+        flex-direction: column;
+    }
+
+    .header--open .site-nav__item{
+        margin: 0;
+    }
 }

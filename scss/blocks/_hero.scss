@@ -2,10 +2,8 @@
     padding: 117px 0 116px 85px;
     background-image: url("../images/hero-img.jpg");
     border-radius: 10px;
-    background-size: 1280px 600px;
+    background-size: cover;
     background-repeat: no-repeat;
-    width: 1280px;
-    height: 600px;
 }
 
 .hero__title{
@@ -24,4 +22,22 @@
     line-height: 26px;
     color: #FEFCF7;
     opacity: 0.8;
+}
+
+@media only screen and (max-width: 1015px){
+    .hero{
+        padding: 104px 0 104px 58px;
+        background-image: url("../images/tablet-hero.jpg");
+
+        &__title{
+            font-size: 3rem;
+            line-height: 3rem;
+        }
+
+        &__p{
+            font-size: 15px;
+            line-height: 25px;
+            margin: 1.5rem 0 2.5rem;
+        }
+    }
 }
